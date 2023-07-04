@@ -45,9 +45,11 @@ function draw() {
   imageMode(CENTER);
   image(towerImage, tower.position.x, tower.position.y, 160, 310);
   pop();
-
+for (var i = 0; i < balls.length; i++) {
+  showCannonBalls(balls[i]);
+}
   cannon.display();
-  cannonBall.display();
+  
 }
 function keyPressed() {
  var cannonBall = new CannonBall(cannon.x, cannon.y);
