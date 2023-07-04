@@ -57,7 +57,7 @@ cannonBall.trajectory = [];
 Matter.Body.setAngle(cannonBall.body, cannon.angle);
 balls.push(cannonBall);
 }
-}
+
 
 function showCannonBalls(ball) {
 if (ball) {
